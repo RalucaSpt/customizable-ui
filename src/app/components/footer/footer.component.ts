@@ -16,11 +16,7 @@ export class FooterComponent{
   constructor() {
     effect(() => {
       if (this.footerConfig()) {
-        console.log(' actualizat:', this.footerConfig());
-
-        if (this.footerConfig().footer.enabled) {
-          console.log('Footer enabled');
-        }
+        // console.log(' actualizat:', this.footerConfig());
       }
     });
   }
