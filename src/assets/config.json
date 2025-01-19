@@ -7,11 +7,11 @@
         { "name": "Contact", "enabled": true }
       ],
       "sticky": true,
-      "transparent": true
+      "transparent": false
     },
     "footer": {
       "enabled": true,
-      "sticky": false
+      "sticky": true
     },
     "sidebar": {
       "enabled": true
