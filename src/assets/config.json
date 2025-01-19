@@ -1,0 +1,30 @@
+{
+    "menu": {
+      "items": [
+        { "name": "Home", "enabled": true },
+        { "name": "About Us", "enabled": true },
+        { "name": "Services", "enabled": false },
+        { "name": "Contact", "enabled": true }
+      ],
+      "sticky": true,
+      "transparent": true
+    },
+    "footer": {
+      "enabled": true,
+      "sticky": false
+    },
+    "sidebar": {
+      "enabled": true
+    },
+    "languageSwitcher": {
+      "enabled": true,
+      "languages": [
+        { "name": "English", "visible": true },
+        { "name": "Spanish", "visible": true },
+        { "name": "French", "visible": true },
+        { "name": "German", "visible": false },
+        { "name": "Italian", "visible": false }
+      ]
+    }
+  }
+  
