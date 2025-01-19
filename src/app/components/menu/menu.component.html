@@ -1,0 +1,23 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<nav 
+  class="custom-menu"
+  [class.sticky-menu]="menuConfig()?.menu?.sticky"
+  [class.transparent-menu]="menuConfig()?.menu?.transparent"
+>
+<ul class="menu-items">
+  @for(item of menuConfig()?.menu.items; track item){
+    @if(item.enabled){
+      <li>
+        {{ item.name }}
+      </li>
+    }
+  }
+</ul>
+@if(menuConfig()?.sidebar?.enabled) {
+  <button (click)="toggleSidebar()" class="toggle-button">
+    <mat-icon *ngIf="sidebarExpanded()">chevron_left</mat-icon>
+    <mat-icon *ngIf="!sidebarExpanded()">expand_more</mat-icon>
+  </button>
+}
+</nav>
+

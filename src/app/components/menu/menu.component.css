@@ -1,0 +1,74 @@
+:host {
+  /* Variabile pentru personalizare */
+  --menu-bg-color: #333; /* Fundal implicit */
+  --menu-text-color: #fff; /* Text implicit */
+  --menu-padding: 15px; /* Spațiere internă */
+  --menu-item-spacing: 20px; /* Distanță între elemente */
+  --menu-item-hover-color: #00bcd4; /* Culoare la hover */
+  --menu-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Umbra */
+}
+
+.custom-menu {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  background-color: var(--menu-bg-color);
+  color: var(--menu-text-color);
+  padding: var(--menu-padding);
+  box-shadow: var(--menu-shadow);
+  position: relative;
+  width: 100%;
+}
+
+.menu-items {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: var(--menu-item-spacing);
+}
+
+.menu-items li {
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.menu-items li:hover {
+  color: var(--menu-item-hover-color);
+  transform: scale(1.1);
+}
+
+.menu-items .disabled {
+  opacity: 0.5;
+  pointer-events: none;
+  cursor: default;
+}
+
+.sticky-menu {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  top: 0;
+}
+
+.transparent-menu {
+  background-color: transparent;
+  color: #fff;
+  box-shadow: none;
+}
+
+.toggle-button {
+  background-color: transparent;
+  color: #fff; 
+  border: none; 
+  padding: 10px 15px; 
+  margin-right: 30px;
+  cursor: pointer;
+  font-size: 14px; 
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-button:hover {
+  background-color: rgba(0, 0, 0, 0.253); 
+}
