@@ -9,7 +9,8 @@
     --footer-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Umbra */
     --footer-link-spacing: 20px; /* Spațiere între linkuri */
   }
-  
+
+
   .custom-footer {
     background-color: var(--footer-bg-color);
     color: var(--footer-text-color);
@@ -23,10 +24,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px; /* Distanță între secțiuni */
+    gap: 30px; /* Distanță între secțiuni */
   }  
+
+  .sticky-footer {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+  }
   
-  /* Stiluri responsive */
   @media (max-width: 768px) {
     :host {
       --footer-font-size: 12px; /* Text mai mic */

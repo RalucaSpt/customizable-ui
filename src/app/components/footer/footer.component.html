@@ -1,6 +1,10 @@
-
-<footer  class="custom-footer">
-    <div class="footer-content">
-    <p>&copy; 2025 My Website. All rights reserved.</p>
-    </div>
-</footer>
+@if( footerConfig()?.footer?.enabled){
+    <footer  
+        class="custom-footer"
+        [class.sticky-footer]="footerConfig()?.footer?.sticky"
+    >
+        <div class="footer-content">
+        <p>&copy; 2025 My Website. All rights reserved.</p>
+        </div>
+    </footer>
+}
