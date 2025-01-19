@@ -8,8 +8,8 @@ import { toSignal } from '@angular/core/rxjs-interop';
 export class ConfigService {
   private http = inject(HttpClient);
   private configUrl = 'assets/config.json';
-
   config: Signal<any> = signal(null);
+  sidebarExpanded = signal(false);
 
   constructor() {
     this.loadConfig();
