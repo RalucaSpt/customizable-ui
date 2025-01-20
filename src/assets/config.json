@@ -6,11 +6,11 @@
         { "name": "Services", "enabled": false },
         { "name": "Contact", "enabled": true }
       ],
-      "sticky": true,
+      "sticky": false,
       "transparent": false
     },
     "footer": {
-      "enabled": true,
+      "enabled": false,
       "sticky": true
     },
     "sidebar": {

@@ -12,7 +12,8 @@ import { MatIconModule } from '@angular/material/icon';
 export class MenuComponent {
   private configService = inject(ConfigService); 
   menuConfig = this.configService.config;
-  sidebarExpanded = signal(false);
+  sidebarExpanded = this.configService.sidebarExpanded;
+  currentPage = this.configService.currentPage;
 
   constructor() {
     effect(() => {
@@ -24,6 +25,11 @@ export class MenuComponent {
 
   toggleSidebar() {
     this.sidebarExpanded.set(!this.sidebarExpanded());
-    this.configService.sidebarExpanded.set(this.sidebarExpanded());
+    console.log('sidebarExpanded:', this.sidebarExpanded());
+  }
+
+  onMenuItemClick(item: string) {
+    this.currentPage.set(item);
+    console.log('currentPage:', this.currentPage());
   }
 }

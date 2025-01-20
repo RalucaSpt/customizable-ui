@@ -1,0 +1,70 @@
+/* Stil general pentru sidebar */
+.sidebar {
+    position: fixed;
+    top: 70px;
+    right: 0; /* Mutăm sidebar-ul pe partea dreaptă */
+    height: 100vh; /* Ocupă întreaga înălțime a ecranului */
+    width: 250px; /* Lățimea implicită */
+    background-color: #333; /* Fundal închis */
+    color: #fff; /* Text alb */
+    overflow-x: hidden; /* Ascunde conținutul care depășește pe orizontală */
+    transition: width 0.3s ease; /* Tranziție pentru lățime */
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5); /* Umbră pentru separare vizuală */
+    z-index: 1000; /* Prioritate mare pe stratificare */
+    text-align: center;
+  }
+  
+  /* Stil pentru sidebar extins */
+  .sidebar.expanded {
+    width: 400px; /* Lățime mărită când este extins */
+  }
+  
+  /* Stil pentru conținutul din sidebar */
+  .sidebar-content {
+    padding: 20px; /* Spațiere internă */
+    font-size: 16px; /* Dimensiunea fontului */
+  }
+  
+  .sidebar-content h2 {
+    font-size: 24px; /* Dimensiune mai mare pentru titlu */
+    color: #00bcd4; /* Culoare evidențiată pentru titlu */
+    margin-bottom: 20px; /* Spațiu sub titlu */
+  }
+  
+  .sidebar-content ul {
+    list-style: none; /* Elimină marcatorii din listă */
+    padding: 0;
+  }
+  
+  .sidebar-content li {
+    margin: 10px 0; /* Spațiere între elementele listei */
+  }
+  
+  .sidebar-content a {
+    text-decoration: none; /* Elimină sublinierea */
+    color: #fff; /* Text alb */
+    display: block; /* Linkuri pe întreaga lățime */
+    padding: 10px 15px; /* Spațiere internă */
+    border-radius: 5px; /* Colțuri rotunjite */
+    transition: background-color 0.3s ease; /* Tranziție pentru hover */
+  }
+  
+  .sidebar-content a:hover {
+    background-color: #00bcd4; /* Fundal albastru la hover */
+  }
+  
+  /* Responsivitate: ajustări pentru ecrane mici */
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 200px; /* Lățime mai mică pentru ecrane mici */
+    }
+  
+    .sidebar.expanded {
+      width: 300px; /* Lățime extinsă mai mică */
+    }
+  
+    .sidebar-content {
+      font-size: 14px; /* Dimensiune mai mică a fontului */
+    }
+  }
+  

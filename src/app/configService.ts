@@ -1,4 +1,4 @@
-import { Injectable, inject, Signal, signal } from '@angular/core';
+import { Injectable, inject, Signal, signal, WritableSignal } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { toSignal } from '@angular/core/rxjs-interop';
 
@@ -10,6 +10,7 @@ export class ConfigService {
   private configUrl = 'assets/config.json';
   config: Signal<any> = signal(null);
   sidebarExpanded = signal(false);
+  currentPage = signal('Home');
 
   constructor() {
     this.loadConfig();
