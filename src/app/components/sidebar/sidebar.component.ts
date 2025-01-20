@@ -1,9 +1,10 @@
 import { Component, effect, inject } from '@angular/core';
 import { ConfigService } from '../../configService';
+import { LanguageSwitcherComponent } from "../../language-switcher/language-switcher.component";
 
 @Component({
   selector: 'app-sidebar',
-  imports: [],
+  imports: [LanguageSwitcherComponent],
   templateUrl: './sidebar.component.html',
   styleUrl: './sidebar.component.css'
 })
@@ -16,7 +17,7 @@ export class SidebarComponent {
   constructor(){
     effect(() => {
       if (this.sidebarConfig()) {
-        console.log(' actualizat:', this.expanded());
+        // console.log(' actualizat:', this.expanded());
       }
     });
   }

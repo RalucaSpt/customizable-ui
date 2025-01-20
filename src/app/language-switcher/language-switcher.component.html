@@ -1,1 +1,13 @@
-<p>language-switcher works!</p>
+@if(languageConfig()?.languageSwitcher?.enabled) {
+    <div class="language-switcher" >
+        <p>Language Switcher</p>
+        <ul>
+            @for ( language of languageConfig()?.languageSwitcher.languages; track language) {
+                @if( language.enabled){
+                    <li>{{ language.name }}</li>
+                }
+            }
+        </ul>
+    </div>
+  }
+  

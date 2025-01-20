@@ -10,7 +10,7 @@
       "transparent": false
     },
     "footer": {
-      "enabled": false,
+      "enabled": true,
       "sticky": true
     },
     "sidebar": {
@@ -19,11 +19,11 @@
     "languageSwitcher": {
       "enabled": true,
       "languages": [
-        { "name": "English", "visible": true },
-        { "name": "Spanish", "visible": true },
-        { "name": "French", "visible": true },
-        { "name": "German", "visible": false },
-        { "name": "Italian", "visible": false }
+        { "code": "en", "name": "English", "enabled": true },
+        { "code": "fr", "name": "French", "enabled": true },
+        { "code": "es", "name": "Spanish", "enabled": true },
+        { "code": "de", "name": "German", "enabled": false },
+        { "code": "it", "name": "Italian", "enabled": false }
       ]
     }
   }
