@@ -1,3 +1,42 @@
+# Language Switcher & Configurable Sidebar - [Deploy link](https://customizable-ui.vercel.app)
+
+A dynamic Angular app with a menu, footer, language switcher, and sidebar, fully configurable via JSON.
+
+
+## Features
+
+- **Top Menu**: Responsive, configurable items (e.g., Home, About Us), with `enabled`, `sticky`, and `transparent` properties from config.
+
+- **Footer**: Configurable `enabled` and `sticky` properties.
+
+- **Sidebar**: Configurable `enabled` property, toggle button for expand/collapse, and dynamic submenu based on the current page.
+
+- **Language Switcher**: Displays languages, with properties defined in config and auto-loaded.
+
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-repo.git
+   cd your-repo
+
+2. Install dependencies:
+   ```bash
+    npm install
+
+3. Start the application:
+   ```bash
+    ng serve
+   
+4. Configuration
+   Modify assets/config.json:
+   ```bash
+   {
+    "languageSwitcher": { "enabled": true, "languages": [...] },
+    "sidebar": { "enabled": true, "sticky": true }
+   }
+
 # MyApp
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.2.
