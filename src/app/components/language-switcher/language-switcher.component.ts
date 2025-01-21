@@ -1,5 +1,5 @@
 import { Component, effect, inject } from '@angular/core';
-import { ConfigService } from '../../configService';
+import { ConfigService } from '../../services/configService';
 @Component({
   selector: 'app-language-switcher',
   templateUrl: './language-switcher.component.html',

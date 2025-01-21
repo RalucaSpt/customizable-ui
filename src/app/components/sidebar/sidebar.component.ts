@@ -1,5 +1,5 @@
 import { Component, effect, inject } from '@angular/core';
-import { ConfigService } from '../../configService';
+import { ConfigService } from '../../services/configService';
 import { LanguageSwitcherComponent } from "../language-switcher/language-switcher.component";
 
 @Component({

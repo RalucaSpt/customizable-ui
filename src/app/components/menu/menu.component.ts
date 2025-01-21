@@ -1,5 +1,5 @@
 import { Component, OnInit, effect, inject, signal } from '@angular/core';
-import { ConfigService } from '../../configService';
+import { ConfigService } from '../../services/configService';
 import { CommonModule } from '@angular/common';
 import { MatIconModule } from '@angular/material/icon';
 

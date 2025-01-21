@@ -1,5 +1,5 @@
 import { Component, effect, inject, OnInit } from '@angular/core';
-import { ConfigService } from '../../configService';
+import { ConfigService } from '../../services/configService';
 import { CommonModule } from '@angular/common';
 
 @Component({
