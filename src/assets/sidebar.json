@@ -1,0 +1,7 @@
+{
+    "sidebar": {
+      "enabled": true,
+      "position": "left",
+      "collapsible": true
+    }
+  }
