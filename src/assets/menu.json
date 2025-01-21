@@ -1,0 +1,43 @@
+{
+    "menu": {
+      "items": [
+        { 
+          "name": "Home", 
+          "enabled": true,
+          "submenus": [
+            { "name": "Overview", "enabled": true },
+            { "name": "Updates", "enabled": true }
+          ]
+        },
+        { 
+          "name": "About Us", 
+          "enabled": true,
+          "submenus": [ 
+            { "name": "Our Story", "enabled": true },
+            { "name": "Team", "enabled": true },
+            { "name": "Careers", "enabled": false }
+          ]
+        },
+        { 
+          "name": "Services", 
+          "enabled": false,
+          "submenus": [ 
+            { "name": "Consulting", "enabled": true },
+            { "name": "Support", "enabled": false }
+          ]
+        },
+        { 
+          "name": "Contact", 
+          "enabled": true,
+          "submenus": [
+            { "name": "Email Us", "enabled": true },
+            { "name": "Locations", "enabled": true }
+          ]
+        }
+      ],
+      "sticky": false,
+      "transparent": false,
+      "theme": "light", 
+      "animation": "slide"
+    }
+  }
