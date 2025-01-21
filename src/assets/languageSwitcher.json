@@ -1,0 +1,13 @@
+{
+    "languageSwitcher": {
+      "enabled": true,
+      "defaultLanguage": "en",
+      "languages": [
+        { "code": "en", "name": "English", "enabled": true },
+        { "code": "fr", "name": "French", "enabled": true },
+        { "code": "es", "name": "Spanish", "enabled": true },
+        { "code": "ro", "name": "Romanian", "enabled": false },
+        { "code": "it", "name": "Italian", "enabled": false }
+      ]
+    }
+  }
