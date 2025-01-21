@@ -1,0 +1,11 @@
+{
+    "footer": {
+      "enabled": true,
+      "sticky": true,
+      "background": "dark", 
+      "socialLinks": [ 
+        { "platform": "Facebook", "url": "https://facebook.com" },
+        { "platform": "Instagram", "url": "https://instagram.com" }
+      ]
+    }
+  }
