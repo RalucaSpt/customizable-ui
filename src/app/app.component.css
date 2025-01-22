@@ -1,0 +1,28 @@
+/* Stiluri pentru app-main */
+app-main {
+    display: flex; /* Layout flexibil pentru conținut */
+    flex-direction: column; /* Aliniere pe verticală */
+    padding: 20px; /* Spațiu intern pentru conținut */
+    background-color: #f5f5f5; /* Fundal neutru */
+    min-height: calc(100vh - 60px); /* Înălțime ajustată pentru a exclude header-ul și footer-ul */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Umbre subtile */
+    overflow-y: auto; /* Scroll vertical pentru conținut lung */
+  }
+  
+  /* Responsivitate pentru ecrane mici */
+  @media screen and (max-width: 768px) {
+    app-main {
+      padding: 10px; /* Reduce spațiul pe dispozitive mai mici */
+    }
+  }
+  
+  /* Stiluri pentru secțiuni din app-main */
+  app-main > section {
+    flex: 1; /* Secțiunile umplu spațiul disponibil */
+    margin-bottom: 20px; /* Spațiere între secțiuni */
+    background-color: #ffffff; /* Fundal alb pentru secțiuni */
+    border-radius: 8px; /* Colțuri rotunjite */
+    padding: 15px; /* Spațiu intern pentru secțiuni */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Umbre subtile pentru secțiuni */
+  }
+  
