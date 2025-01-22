@@ -1,4 +1,4 @@
-import { Injectable, inject, Signal, signal, WritableSignal } from '@angular/core';
+import { Injectable, inject, Signal } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { catchError, of } from 'rxjs';
@@ -8,24 +8,34 @@ import { catchError, of } from 'rxjs';
 })
 export class ConfigService {
   private http = inject(HttpClient);
-  private configUrl = 'assets/config.json';
-  config: Signal<any> = signal(null);
-  sidebarExpanded = signal(false);
-  currentPage = signal('Home');
+
+  private configUrls = {
+    footer: 'assets/footer.json',
+    languageSwitcher: 'assets/languageSwitcher.json',
+    menu: 'assets/menu.json',
+    sidebar: 'assets/sidebar.json',
+  };
+
+  footerConfig: Signal<any>;
+  languageSwitcherConfig: Signal<any>;
+  menuConfig: Signal<any>;
+  sidebarConfig: Signal<any>;
 
   constructor() {
-    this.loadConfig();
+    this.footerConfig = this.loadConfig('footer');
+    this.languageSwitcherConfig = this.loadConfig('languageSwitcher');
+    this.menuConfig = this.loadConfig('menu');
+    this.sidebarConfig = this.loadConfig('sidebar');
   }
 
-  private loadConfig() {
-    this.config = toSignal(
-      this.http.get(this.configUrl).pipe(
+  private loadConfig(key: keyof typeof this.configUrls): Signal<any> {
+    return toSignal(
+      this.http.get(this.configUrls[key]).pipe(
         catchError((err) => {
-          console.error('Error while loading configuration:', err);
+          console.error(`Error while loading ${key} configuration:`, err);
           return of(null);
         })
       )
     );
   }
-  
 }

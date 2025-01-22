@@ -9,15 +9,15 @@ import { CommonModule } from '@angular/common';
   imports: [CommonModule]
 })
 export class FooterComponent{
-  configService = inject(ConfigService); 
+  // configService = inject(ConfigService); 
 
-  footerConfig = this.configService.config;
+  // footerConfig = this.configService.config;
 
-  constructor() {
-    effect(() => {
-      if (this.footerConfig()) {
-        // console.log(' actualizat:', this.footerConfig());
-      }
-    });
-  }
+  // constructor() {
+  //   effect(() => {
+  //     if (this.footerConfig()) {
+  //       // console.log(' actualizat:', this.footerConfig());
+  //     }
+  //   });
+  // }
 }
