@@ -1,4 +1,4 @@
-import { Injectable, inject, Signal } from '@angular/core';
+import { Injectable, inject, Signal, signal } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { catchError, of } from 'rxjs';
@@ -20,6 +20,9 @@ export class ConfigService {
   languageSwitcherConfig: Signal<any>;
   menuConfig: Signal<any>;
   sidebarConfig: Signal<any>;
+
+  currentPage = signal('home');
+  sidebarExpanded = signal(false);
 
   constructor() {
     this.footerConfig = this.loadConfig('footer');
