@@ -10,18 +10,18 @@ import { MatIconModule } from '@angular/material/icon';
   imports: [CommonModule, MatIconModule]
 })
 export class MenuComponent {
-  // private configService = inject(ConfigService); 
-  // menuConfig = this.configService.config;
+  private configService = inject(ConfigService); 
+  menuConfig = this.configService.menuConfig;
   // sidebarExpanded = this.configService.sidebarExpanded;
   // currentPage = this.configService.currentPage;
 
-  // constructor() {
-  //   effect(() => {
-  //     if (this.menuConfig()) {
-  //       // console.log(' actualizat:', this.menuConfig());
-  //     }
-  //   });
-  // }
+  constructor() {
+    effect(() => {
+      if (this.menuConfig()) {
+        // console.log(' actualizat:', this.menuConfig());
+      }
+    });
+  }
 
   // toggleSidebar() {
   //   this.sidebarExpanded.set(!this.sidebarExpanded());
