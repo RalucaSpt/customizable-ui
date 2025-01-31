@@ -28,12 +28,14 @@
   gap: var(--menu-item-spacing);
 }
 
-.menu-items li {
+.menu-items a {
   cursor: pointer;
   transition: color 0.3s ease, transform 0.2s ease;
+  text-decoration: none;
+  color: inherit;
 }
 
-.menu-items li:hover {
+.menu-items a:hover {
   color: var(--menu-item-hover-color);
   transform: scale(1.1);
 }
