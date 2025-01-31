@@ -1,0 +1,18 @@
+section {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .btn:hover {
+    background: #1e7e34;
+  }
+  
