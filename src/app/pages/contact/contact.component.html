@@ -1,1 +1,20 @@
-<p>contact works!</p>
+<section>
+    <h1>Contact Us</h1>
+    <p>If you have any questions, feel free to reach out to us.</p>
+    <form (submit)="submitForm()">
+      <label>
+        Name:
+        <input type="text" required>
+      </label>
+      <label>
+        Email:
+        <input type="email" required>
+      </label>
+      <label>
+        Message:
+        <textarea required></textarea>
+      </label>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+  

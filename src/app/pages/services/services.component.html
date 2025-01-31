@@ -1,1 +1,12 @@
-<p>services works!</p>
+<section>
+    <h1>Our Services</h1>
+    <p>We offer a variety of high-quality services tailored to meet your needs.</p>
+  
+    <div class="services-list">
+      <div class="service-card" *ngFor="let service of services">
+        <h2>{{ service.title }}</h2>
+        <p>{{ service.description }}</p>
+      </div>
+    </div>
+  </section>
+  

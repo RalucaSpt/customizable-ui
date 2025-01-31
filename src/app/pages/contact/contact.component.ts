@@ -7,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrl: './contact.component.css'
 })
 export class ContactComponent {
+  submitForm() {
 
+    // Add form submission logic here
+
+    console.log('Form submitted');
+
+  }
 }

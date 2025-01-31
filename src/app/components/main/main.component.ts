@@ -1,10 +1,9 @@
 import { Component, effect, inject } from '@angular/core';
 import { ConfigService } from '../../services/configService';
-import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-main',
-  imports: [RouterOutlet],
+  imports: [],
   templateUrl: './main.component.html',
   styleUrl: './main.component.css'
 })
