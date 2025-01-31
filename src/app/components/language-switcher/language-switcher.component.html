@@ -4,7 +4,11 @@
         <ul>
             @for ( language of languageConfig()?.languageSwitcher.languages; track language) {
                 @if( language.enabled){
-                    <li>{{ language.name }}</li>
+                    <li>
+                        <button (click)="updateLanguage(language.code)">
+                            {{ language.name }}
+                        </button>
+                    </li>
                 }
             }
         </ul>

@@ -10,10 +10,11 @@ import { MatIconModule } from '@angular/material/icon';
   imports: [CommonModule, MatIconModule]
 })
 export class MenuComponent {
-  private configService = inject(ConfigService); 
+  configService = inject(ConfigService); 
   menuConfig = this.configService.config;
   sidebarExpanded = this.configService.sidebarExpanded;
   currentPage = this.configService.currentPage;
+  translation = this.configService.currentTranslation;
 
   constructor() {
     effect(() => {
