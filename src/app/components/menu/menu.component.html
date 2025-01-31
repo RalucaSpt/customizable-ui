@@ -8,7 +8,7 @@
   <div class="menu-items">
     @for (item of menuConfig()?.menu.items; track item) {
       @if (item.enabled) {
-        <a [routerLink]="['/' + formatRoute(item.name)]">
+        <a (click)="onClickItem(item.name)" [routerLink]="['/' + formatRoute(item.name)]">
           {{ item.name }}
         </a>
       }

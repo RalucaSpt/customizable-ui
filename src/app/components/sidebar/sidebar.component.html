@@ -1,8 +1,23 @@
-@if(expanded()){
-<div class="sidebar">
-    <div class="sidebar-header">
-      <h2>Sidebar for {{ currentPage()}}</h2>
+  @if(expanded()) {
+  <div class="sidebar">
+   <div class="menu-items">
+      @for (item of menuConfig()?.menu.items; track item) {
+        @if (item.enabled && currentPage() === item.name) {
+          @if (item.submenus && item.submenus.length > 0) {
+              <div class="submenu">
+                @for (submenu of item.submenus; track submenu) {
+                  @if (submenu.enabled) {
+                    <a [routerLink]="['/' + formatRoute(submenu.name)]">
+                      {{ submenu.name }}
+                    </a>
+                  }
+                }
+              </div>
+          }
+        }
+      }
     </div>
-    <app-language-switcher/>
+
+    <app-language-switcher />
   </div>
-}
+  }

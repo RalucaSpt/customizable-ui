@@ -21,7 +21,7 @@ export class ConfigService {
   menuConfig: Signal<any>;
   sidebarConfig: Signal<any>;
 
-  currentPage = signal('home');
+  currentPage = signal('Home');
   sidebarExpanded = signal(false);
 
   constructor() {

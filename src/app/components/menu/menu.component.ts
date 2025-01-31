@@ -30,6 +30,11 @@ export class MenuComponent {
     console.log('sidebarExpanded:', this.sidebarExpanded());
   }
 
+  onClickItem(item: any) {
+    this.currentPage.set(item);
+    console.log('currentPage:', this.currentPage());
+  }
+
   formatRoute(name: string): string {
     return name.toLowerCase().replace(/\s+/g, '-');
   }
