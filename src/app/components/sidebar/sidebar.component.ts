@@ -1,13 +1,12 @@
 import { Component, effect, inject } from '@angular/core';
 import { ConfigService } from '../../services/configService';
-import { LanguageSwitcherComponent } from "../language-switcher/language-switcher.component";
 import { RouterLink } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   selector: 'app-sidebar',
-  imports: [LanguageSwitcherComponent, RouterLink, CommonModule, MatIconModule],
+  imports: [RouterLink, CommonModule, MatIconModule],
   templateUrl: './sidebar.component.html',
   styleUrls: ['./sidebar.component.css']
 })
