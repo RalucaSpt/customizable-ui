@@ -3,12 +3,13 @@ import { ConfigService } from '../../services/configService';
 import { CommonModule } from '@angular/common';
 import { MatIconModule } from '@angular/material/icon';
 import { RouterLink } from '@angular/router';
+import { LanguageSwitcherComponent } from "../language-switcher/language-switcher.component";
 
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.component.html',
   styleUrls: ['./menu.component.css'],
-  imports: [CommonModule, MatIconModule, RouterLink]
+  imports: [CommonModule, MatIconModule, RouterLink, LanguageSwitcherComponent]
 })
 export class MenuComponent {
   private configService = inject(ConfigService); 

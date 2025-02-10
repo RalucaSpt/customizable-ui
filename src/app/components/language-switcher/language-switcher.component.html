@@ -1,13 +1,13 @@
-<!-- @if(languageConfig()?.languageSwitcher?.enabled) {
-    <div class="language-switcher" >
-        <p>Language Switcher</p>
-        <ul>
-            @for ( language of languageConfig()?.languageSwitcher.languages; track language) {
-                @if( language.enabled){
-                    <li>{{ language.name }}</li>
-                }
-            }
-        </ul>
+@if(languageConfig()?.languageSwitcher?.enabled) {
+    <div class="dropdown" >
+        <button class="dropbtn">Language</button>
+            <div class="dropdown-content">
+                @for ( language of languageConfig()?.languageSwitcher.languages; track language) {
+                    @if( language.enabled){
+                        <a>{{ language.name }}</a>
+                    }
+                }            
+            </div>
     </div>
   }
-   -->
+  

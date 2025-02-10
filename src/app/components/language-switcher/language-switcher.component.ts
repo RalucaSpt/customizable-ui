@@ -6,16 +6,16 @@ import { ConfigService } from '../../services/configService';
   styleUrls: ['./language-switcher.component.css'],
 })
 export class LanguageSwitcherComponent {
-  // private configService = inject(ConfigService);
+  private configService = inject(ConfigService);
 
-  // languageConfig = this.configService.config;
-  // enabledLanguages: { code: string; name: string }[] = [];
+  languageConfig = this.configService.languageSwitcherConfig;
+  enabledLanguages: { code: string; name: string }[] = [];
 
-  // constructor() {
-  //   effect(() => {
-  //     if (this.languageConfig()) {
-  //       console.log(this.languageConfig());
-  //     }
-  //   });
-  // }
+  constructor() {
+    effect(() => {
+      if (this.languageConfig()) {
+        console.log(this.languageConfig());
+      }
+    });
+  }
 }
