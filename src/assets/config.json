@@ -1,10 +1,10 @@
 {
     "menu": {
       "items": [
-        { "name": "Home", "enabled": true },
-        { "name": "About Us", "enabled": true },
-        { "name": "Services", "enabled": false },
-        { "name": "Contact", "enabled": true }
+        { "TEXTTAG": "HOME", "enabled": true },
+        { "TEXTTAG": "ABOUT", "enabled": true },
+        { "TEXTTAG": "SERVICES", "enabled": false },
+        { "TEXTTAG": "CONTACT", "enabled": true }
       ],
       "sticky": false,
       "transparent": false
@@ -20,11 +20,9 @@
       "enabled": true,
       "languages": [
         { "code": "en", "name": "English", "enabled": true },
-        { "code": "fr", "name": "French", "enabled": true },
-        { "code": "es", "name": "Spanish", "enabled": true },
-        { "code": "de", "name": "German", "enabled": false },
-        { "code": "it", "name": "Italian", "enabled": false }
+        { "code": "cn", "name": "中文", "enabled": true }
       ]
-    }
+    },
+    "currentLanguage": "en"
   }
   

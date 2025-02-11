@@ -1,7 +1,8 @@
 import { Injectable, inject, Signal, signal } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { toSignal } from '@angular/core/rxjs-interop';
-import { catchError, of } from 'rxjs';
+import { BehaviorSubject, catchError, of } from 'rxjs';
+import { switchMap } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root',
@@ -20,7 +21,9 @@ export class ConfigService {
   languageSwitcherConfig: Signal<any>;
   menuConfig: Signal<any>;
   sidebarConfig: Signal<any>;
-
+  private translationUrl = 'assets/translations/';
+  currentTranslation: Signal<any> = signal(null);
+  languageCode$ = new BehaviorSubject<string>('en');
   currentPage = signal('Home');
   sidebarExpanded = signal(false);
 
@@ -40,5 +43,28 @@ export class ConfigService {
         })
       )
     );
+    this.currentTranslation = toSignal(
+      this.languageCode$.pipe(
+        switchMap((lang) =>
+          this.http.get(this.translationUrl + lang + '.json').pipe(
+            catchError((err) => {
+              console.error('Error while loading translation:', err);
+              return of({});
+            })
+          )
+        )
+      ),
+      { initialValue: {} } // Prevents undefined issues
+    );
+}
+
+public loadTranslation(langCode: string) {
+  this.languageCode$.next(langCode);
+   }
+
+  public translateTag(tag: string) {
+    return this.currentTranslation().hasOwnProperty(tag)
+      ? this.currentTranslation()[tag]
+      : tag;
   }
 }

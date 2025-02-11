@@ -17,6 +17,7 @@ export class MenuComponent {
   sidebarConfig = this.configService.sidebarConfig;
   sidebarExpanded = this.configService.sidebarExpanded;
   currentPage = this.configService.currentPage;
+  translation = this.configService.currentTranslation;
 
   constructor() {
     effect(() => {

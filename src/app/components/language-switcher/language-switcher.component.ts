@@ -18,4 +18,8 @@ export class LanguageSwitcherComponent {
       }
     });
   }
+
+  updateLanguage(code: string) {
+    this.configService.loadTranslation(code);
+  }
 }
