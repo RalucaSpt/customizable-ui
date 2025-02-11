@@ -2,12 +2,10 @@
     <div class="dropdown" >
         <button class="dropbtn">Language</button>
             <div class="dropdown-content">
-                @for ( language of languageConfig()?.languageSwitcher.languages; track language) {
-                    @if( language.enabled){
-                        <a (click)="updateLanguage(language.code)">
-                            {{ language.name }}
-                        </a>
-                    }
+                @for ( language of enabledLanguages(); track language) {
+                    <a (click)="updateLanguage(language.code)">
+                        {{ language.name }}
+                    </a>
                 }            
             </div>
     </div>
