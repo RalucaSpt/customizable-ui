@@ -1,55 +1,34 @@
-:host {
-    /* Variabile pentru personalizare */
-    --footer-bg-color: #222; /* Fundal închis */
-    --footer-text-color: #fff; /* Text alb */
-    --footer-link-color: #00bcd4; /* Linkuri albastru */
-    --footer-link-hover-color: #ff4081; /* Hover pe linkuri roz */
-    --footer-padding: 20px; /* Spațiere internă */
-    --footer-font-size: 14px; /* Dimensiunea fontului */
-    --footer-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Umbra */
-    --footer-link-spacing: 20px; /* Spațiere între linkuri */
-  }
+.custom-footer {
+  padding: 20px;
+  text-align: center;
+}
 
+.sticky-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
 
-  .custom-footer {
-    background-color: var(--footer-bg-color);
-    color: var(--footer-text-color);
-    padding: var(--footer-padding);
-    text-align: center;
-    font-size: var(--footer-font-size);
-    box-shadow: var(--footer-shadow);
-  }
-  
-  .custom-footer .footer-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px; /* Distanță între secțiuni */
-  }  
+.footer-dark {
+  background-color: #333;
+  color: white;
+}
 
-  .sticky-footer {
-    position: fixed;
-    left: 0;
-    width: 100%;
-    bottom: 0;
-  }
-  
-  @media (max-width: 768px) {
-    :host {
-      --footer-font-size: 12px; /* Text mai mic */
-      --footer-link-spacing: 15px; /* Distanță mai mică între linkuri */
-      --footer-padding: 15px; /* Reducere padding */
-    }
-  
-    .custom-footer .footer-content {
-      gap: 8px; /* Reducere spațiu între secțiuni */
-    }
-  }
-  
-  @media (max-width: 480px) {
-    :host {
-      --footer-font-size: 10px; /* Text și mai mic pentru ecrane mici */
-      --footer-padding: 10px;
-    }
-  }
-  
+.footer-light {
+  background-color: #f4f4f4;
+  color: black;
+}
+
+.social-links {
+  margin-top: 10px;
+}
+
+.social-links a {
+  margin: 0 10px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.social-links mat-icon {
+  font-size: 24px;
+}
