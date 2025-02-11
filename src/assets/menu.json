@@ -13,8 +13,8 @@
           "name": "About Us", 
           "enabled": true,
           "submenus": [ 
-            { "TAG": "Our Story", "enabled": true },
-            { "TAG": "Team", "enabled": true },
+            { "name": "Our Story", "enabled": true },
+            { "name": "Team", "enabled": true },
             { "name": "Careers", "enabled": false }
           ]
         },
