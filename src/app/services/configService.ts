@@ -32,17 +32,6 @@ export class ConfigService {
     this.languageSwitcherConfig = this.loadConfig('languageSwitcher');
     this.menuConfig = this.loadConfig('menu');
     this.sidebarConfig = this.loadConfig('sidebar');
-  }
-
-  private loadConfig(key: keyof typeof this.configUrls): Signal<any> {
-    return toSignal(
-      this.http.get(this.configUrls[key]).pipe(
-        catchError((err) => {
-          console.error(`Error while loading ${key} configuration:`, err);
-          return of(null);
-        })
-      )
-    );
     this.currentTranslation = toSignal(
       this.languageCode$.pipe(
         switchMap((lang) =>
@@ -56,11 +45,22 @@ export class ConfigService {
       ),
       { initialValue: {} } // Prevents undefined issues
     );
-}
+  }
 
-public loadTranslation(langCode: string) {
-  this.languageCode$.next(langCode);
-   }
+  private loadConfig(key: keyof typeof this.configUrls): Signal<any> {
+    return toSignal(
+      this.http.get(this.configUrls[key]).pipe(
+        catchError((err) => {
+          console.error(`Error while loading ${key} configuration:`, err);
+          return of(null);
+        })
+      )
+    );
+  }
+
+  public loadTranslation(langCode: string) {
+    this.languageCode$.next(langCode);
+  }
 
   public translateTag(tag: string) {
     return this.currentTranslation().hasOwnProperty(tag)
