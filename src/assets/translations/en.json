@@ -1,18 +1,24 @@
 {
-    "menu": {
-      "home": "Home",
-      "aboutus": "About Us",
-      "services": "Services",
-      "contact": "Contact",
-      "overview": "Overview",
-      "updates": "Updates",
-      "ourStory": "Our Story",
-      "team": "Team",
-      "careers": "Careers",
-      "consulting": "Consulting",
-      "support": "Support",
-      "emailUs": "Email Us",
-      "locations": "Locations"
-    }
+  "menu": {
+    "home": "Home",
+    "aboutus": "About Us",
+    "services": "Services",
+    "contact": "Contact",
+    "overview": "Overview",
+    "updates": "Updates",
+    "ourStory": "Our Story",
+    "team": "Team",
+    "careers": "Careers",
+    "consulting": "Consulting",
+    "support": "Support",
+    "emailUs": "Email Us",
+    "locations": "Locations"
+  },
+  "footer": {
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "followUs": "Follow Us",
+    "newsletter": "Newsletter",
+    "subscribe": "Subscribe"
   }
-  
+}

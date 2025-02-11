@@ -1,17 +1,24 @@
 {
-    "menu": {
-      "home": "Acasă",
-      "aboutus": "Despre noi",
-      "services": "Servicii",
-      "contact": "Contact",
-      "overview": "Prezentare generală",
-      "updates": "Actualizări",
-      "ourStory": "Povestea noastră",
-      "team": "Echipă",
-      "careers": "Cariere",
-      "consulting": "Consultanță",
-      "support": "Suport",
-      "emailUs": "Trimiteți-ne un email",
-      "locations": "Locații"
-    }
+  "menu": {
+    "home": "Acasă",
+    "aboutus": "Despre noi",
+    "services": "Servicii",
+    "contact": "Contact",
+    "overview": "Prezentare generală",
+    "updates": "Actualizări",
+    "ourStory": "Povestea noastră",
+    "team": "Echipă",
+    "careers": "Cariere",
+    "consulting": "Consultanță",
+    "support": "Suport",
+    "emailUs": "Trimiteți-ne un email",
+    "locations": "Locații"
+  },
+  "footer": {
+    "privacyPolicy": "Politica de confidențialitate",
+    "termsOfService": "Termeni și condiții",
+    "followUs": "Urmăriți-ne",
+    "newsletter": "Buletin informativ",
+    "subscribe": "Abonați-vă"
+  }
 }

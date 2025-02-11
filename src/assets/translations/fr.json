@@ -1,18 +1,24 @@
 {
-    "menu": {
-      "home": "Accueil",
-      "aboutus": "À propos de nous",
-      "services": "Services",
-      "contact": "Contact",
-      "overview": "Vue d'ensemble",
-      "updates": "Mises à jour",
-      "ourStory": "Notre histoire",
-      "team": "Équipe",
-      "careers": "Carrières",
-      "consulting": "Consultation",
-      "support": "Support",
-      "emailUs": "Envoyez-nous un email",
-      "locations": "Emplacements"
-    }
+  "menu": {
+    "home": "Accueil",
+    "aboutus": "À propos de nous",
+    "services": "Services",
+    "contact": "Contact",
+    "overview": "Vue d'ensemble",
+    "updates": "Mises à jour",
+    "ourStory": "Notre histoire",
+    "team": "Équipe",
+    "careers": "Carrières",
+    "consulting": "Consultation",
+    "support": "Support",
+    "emailUs": "Envoyez-nous un email",
+    "locations": "Emplacements"
+  },
+  "footer": {
+    "privacyPolicy": "Politique de confidentialité",
+    "termsOfService": "Conditions d'utilisation",
+    "followUs": "Suivez-nous",
+    "newsletter": "Bulletin",
+    "subscribe": "Abonnez-vous"
   }
-  
+}

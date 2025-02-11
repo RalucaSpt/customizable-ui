@@ -1,17 +1,24 @@
 {
-    "menu": {
-      "home": "홈",
-      "aboutus": "회사 소개",
-      "services": "서비스",
-      "contact": "연락처",
-      "overview": "개요",
-      "updates": "업데이트",
-      "ourStory": "우리 이야기",
-      "team": "팀",
-      "careers": "채용 정보",
-      "consulting": "컨설팅",
-      "support": "지원",
-      "emailUs": "이메일 보내기",
-      "locations": "위치"
-    }
+  "menu": {
+    "home": "홈",
+    "aboutus": "회사 소개",
+    "services": "서비스",
+    "contact": "연락처",
+    "overview": "개요",
+    "updates": "업데이트",
+    "ourStory": "우리 이야기",
+    "team": "팀",
+    "careers": "채용 정보",
+    "consulting": "컨설팅",
+    "support": "지원",
+    "emailUs": "이메일 보내기",
+    "locations": "위치"
+  },
+  "footer": {
+    "privacyPolicy": "개인정보 처리방침",
+    "termsOfService": "서비스 약관",
+    "followUs": "팔로우하기",
+    "newsletter": "뉴스레터",
+    "subscribe": "구독"
+  }
 }

@@ -11,7 +11,14 @@
         "careers": "Carreras",
         "consulting": "Consultoría",
         "support": "Soporte",
-        "emailUs": "Envíanos un correo electrónico",
+        "emailUs": "Envíanos un correo",
         "locations": "Ubicaciones"
+    },
+    "footer": {
+        "privacyPolicy": "Política de privacidad",
+        "termsOfService": "Términos de servicio",
+        "followUs": "Síguenos",
+        "newsletter": "Boletín informativo",
+        "subscribe": "Suscríbete"
     }
 }

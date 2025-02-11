@@ -6,8 +6,8 @@
         { "code": "en", "name": "English", "enabled": true },
         { "code": "fr", "name": "French", "enabled": true },
         { "code": "es", "name": "Spanish", "enabled": true },
-        { "code": "ro", "name": "Romanian", "enabled": false },
-        { "code": "ko", "name": "Korean", "enabled": false }
+        { "code": "ro", "name": "Romanian", "enabled": true },
+        { "code": "ko", "name": "Korean", "enabled": true }
       ]
     }
   }
