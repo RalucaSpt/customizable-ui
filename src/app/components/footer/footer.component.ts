@@ -7,7 +7,8 @@ import { MatIconModule } from '@angular/material/icon';
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
-  styleUrls: ['./footer.component.css'],
+  styleUrls: ['./footer.component.css'], 
+  "styles":  "node_modules/font-awesome/css/font-awesome.css",
   imports: [CommonModule, MatIconModule]
 })
 export class FooterComponent{

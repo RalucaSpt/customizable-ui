@@ -5,7 +5,7 @@
       "background": "dark", 
       "socialLinks": [ 
         { "platform": "Facebook", "url": "https://facebook.com" },
-        { "platform": "Home", "url": "https://instagram.com" }
+        { "platform": "LinkedIn", "url": "https://linkedin.com" }
       ]
     }
   }
