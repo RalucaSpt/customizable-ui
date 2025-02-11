@@ -1,0 +1,18 @@
+{
+    "menu": {
+      "home": "Accueil",
+      "aboutUs": "À propos de nous",
+      "services": "Services",
+      "contact": "Contact",
+      "overview": "Vue d'ensemble",
+      "updates": "Mises à jour",
+      "ourStory": "Notre histoire",
+      "team": "Équipe",
+      "careers": "Carrières",
+      "consulting": "Consultation",
+      "support": "Support",
+      "emailUs": "Envoyez-nous un email",
+      "locations": "Emplacements"
+    }
+  }
+  

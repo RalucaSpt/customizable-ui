@@ -1,0 +1,17 @@
+{
+    "menu": {
+      "home": "Acasă",
+      "aboutUs": "Despre noi",
+      "services": "Servicii",
+      "contact": "Contact",
+      "overview": "Prezentare generală",
+      "updates": "Actualizări",
+      "ourStory": "Povestea noastră",
+      "team": "Echipă",
+      "careers": "Cariere",
+      "consulting": "Consultanță",
+      "support": "Suport",
+      "emailUs": "Trimiteți-ne un email",
+      "locations": "Locații"
+    }
+}

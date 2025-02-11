@@ -1,5 +1,18 @@
 {
-    "HOME": "Home",
-    "ABOUT": "About",
-    "CONTACT": "Contact"
-}
+    "menu": {
+      "home": "Home",
+      "aboutUs": "About Us",
+      "services": "Services",
+      "contact": "Contact",
+      "overview": "Overview",
+      "updates": "Updates",
+      "ourStory": "Our Story",
+      "team": "Team",
+      "careers": "Careers",
+      "consulting": "Consulting",
+      "support": "Support",
+      "emailUs": "Email Us",
+      "locations": "Locations"
+    }
+  }
+  
