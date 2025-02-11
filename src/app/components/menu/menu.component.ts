@@ -12,7 +12,7 @@ import { LanguageSwitcherComponent } from "../language-switcher/language-switche
   imports: [CommonModule, MatIconModule, RouterLink, LanguageSwitcherComponent]
 })
 export class MenuComponent {
-  private configService = inject(ConfigService); 
+  configService = inject(ConfigService); 
   menuConfig = this.configService.menuConfig;
   sidebarConfig = this.configService.sidebarConfig;
   sidebarExpanded = this.configService.sidebarExpanded;

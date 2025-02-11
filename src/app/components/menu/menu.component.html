@@ -5,12 +5,12 @@
   [class.sticky-menu]="menuConfig()?.menu?.sticky"
   [class.transparent-menu]="menuConfig()?.menu?.transparent"
 >
-<<<<<<< HEAD
   <div class="menu-items">
     @for (item of menuConfig()?.menu.items; track item) {
       @if (item.enabled) {
         <a (click)="onClickItem(item.name)" [routerLink]="['/' + formatRoute(item.name)]">
-          {{ this.configService.translateTag(item.TEXTTAG) }}
+          <!-- {{ this.configService.translateTag(item.TEXTTAG) }} -->
+            {{ item.name }}
         </a>
       }
     }
