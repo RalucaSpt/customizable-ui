@@ -9,8 +9,7 @@
     @for (item of menuConfig()?.menu.items; track item) {
       @if (item.enabled) {
         <a (click)="onClickItem(item.name)" [routerLink]="['/' + formatRoute(item.name)]">
-          <!-- {{ this.configService.translateTag(item.TEXTTAG) }} -->
-            {{ item.name }}
+          {{ translationService.translateKey('menu.' + item.name.toLowerCase().replace(' ', '')) }}
         </a>
       }
     }
