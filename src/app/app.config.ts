@@ -1,23 +1,30 @@
-import { ApplicationConfig } from '@angular/core';
+import { ApplicationConfig, importProvidersFrom } from '@angular/core';
 import { provideRouter } from '@angular/router';
 import { routes } from './app.routes'; 
 import { provideHttpClient, HttpClient } from '@angular/common/http';
-import { TranslateLoader, TranslateService } from '@ngx-translate/core';
-import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import{TranslateHttpLoader} from '@ngx-translate/http-loader';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 
-export function HttpLoaderFactory(http: HttpClient) {
+
+// Funcția pentru încărcarea fișierelor JSON
+export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, 'assets/translations/', '.json');
 }
 
 export const appConfig: ApplicationConfig = {
   providers: [
-    provideRouter(routes), 
+    provideRouter(routes),
     provideHttpClient(),
-    TranslateService,
-    {
-      provide: TranslateLoader,
-      useFactory: HttpLoaderFactory,
-      deps: [HttpClient]
-    }
+    importProvidersFrom(
+      TranslateModule.forRoot({
+        defaultLanguage: 'en',
+        useDefaultLang: true,
+        loader: {
+          provide: TranslateLoader,
+          useFactory: (createTranslateLoader),
+          deps: [HttpClient],
+        }
+      })
+    ) 
   ],
 };
