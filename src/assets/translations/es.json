@@ -12,7 +12,8 @@
         "consulting": "Consultoría",
         "support": "Soporte",
         "emailUs": "Envíanos un correo",
-        "locations": "Ubicaciones"
+        "locations": "Ubicaciones",
+        "authentication": "Autenticación"
     },
     "footer": {
         "privacyPolicy": "Política de privacidad",

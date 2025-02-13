@@ -12,7 +12,8 @@
     "consulting": "컨설팅",
     "support": "지원",
     "emailUs": "이메일 보내기",
-    "locations": "위치"
+    "locations": "위치",
+    "authentication": "인증"
   },
   "footer": {
     "privacyPolicy": "개인정보 처리방침",
