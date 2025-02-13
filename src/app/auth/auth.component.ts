@@ -1,8 +1,21 @@
 import { Component } from '@angular/core';
+import { FormsModule, NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-auth',
   templateUrl: './auth.component.html',
+  imports: [FormsModule],
   styleUrls: ['./auth.component.css']
 })
-export class AuthComponent {}
+export class AuthComponent {
+  isLoginMode = true;
+
+  onSwitchMode() {
+    this.isLoginMode = !this.isLoginMode;
+  }
+
+  onSubmit(form: NgForm) {
+    console.log(form.value);
+    form.reset();
+  }
+}
