@@ -1,6 +1,7 @@
 // src/app/firebase.config.ts
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
+import { getDatabase } from "firebase/database"; // Pentru Realtime Database
+// import { getFirestore } from "firebase/firestore"; // Pentru Firestore
 
 const firebaseConfig = {
   apiKey: "AIzaSyCnKZ4lu1y8jM2Xf5BZYiEDF_0GX84Jc50",
@@ -15,6 +16,10 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
 
-export { app, analytics, firebaseConfig };
+// Initialize Realtime Database
+const database = getDatabase(app); // Pentru Realtime Database
+// const firestore = getFirestore(app); // Pentru Firestore
+
+export { database }; // Exportă database pentru Realtime Database
+// export { firestore }; // Exportă firestore pentru Firestore

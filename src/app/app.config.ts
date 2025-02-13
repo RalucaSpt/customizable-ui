@@ -4,9 +4,6 @@ import { routes } from './app.routes';
 import { provideHttpClient, HttpClient } from '@angular/common/http';
 import{TranslateHttpLoader} from '@ngx-translate/http-loader';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
-import { provideFirebaseApp, initializeApp } from '@angular/fire/app';
-import { provideAnalytics, getAnalytics } from '@angular/fire/analytics';
-import { firebaseConfig } from './firebase.config';
 
 // Funcția pentru încărcarea fișierelor JSON
 export function createTranslateLoader(http: HttpClient) {
@@ -27,8 +24,6 @@ export const appConfig: ApplicationConfig = {
           deps: [HttpClient],
         }
       })
-    ),
-    provideFirebaseApp(() => initializeApp(firebaseConfig)),
-    provideAnalytics(() => getAnalytics()),
+    )
   ],
 };
