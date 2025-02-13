@@ -33,6 +33,10 @@
             { "name": "Email Us", "enabled": true },
             { "name": "Locations", "enabled": true }
           ]
+        },
+        {
+          "name": "Authentication",
+          "enabled": true
         }
       ],
       "sticky": false,

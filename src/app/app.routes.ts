@@ -10,6 +10,6 @@ export const routes: Routes = [
   { path: 'about-us', component: AboutUsComponent },
   { path: 'services', component: ServicesComponent },
   { path: 'contact', component: ContactComponent },
-  { path: 'auth', component: AuthComponent },
+  { path: 'authentication', component: AuthComponent },
   { path: '**', redirectTo: '' }, 
 ];
